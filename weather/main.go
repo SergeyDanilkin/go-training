@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	var Weather meteo.Weather
+	var Meteorologist meteo.Meteorologist
+	var WeatherForecast meteo.WeatherForecast
 
 	var cities = []string{
 		"Mahilyow",
@@ -23,7 +24,7 @@ func main() {
 	}
 
 	for _, city := range cities {
-		Weather := Weather.GetWeather(city)
-		Weather.Print()
+		Weather := Meteorologist.GetWeather(city)
+		WeatherForecast.Print(Weather)
 	}
 }
